@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Wether App</title>
-  <link rel ="stylesheet" href = "style.css">
+  <link rel ="stylesheet" href = "/WeatherApp/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 </head>
 
 
@@ -16,26 +17,32 @@
     <div class="card">
       <div class="search">
           <input type="text" placeholder="Enter CIty Name" spellcheck="false"> </Inp>
-          <button> <img src="/My wether app/Img/Search.png" width="50%"></button>
+          <button> <img src="/WeatherApp/Img/Search.png" width="50%"></button>
       </div>
       <div class="error">
         <p>Invalid City Name</p>
       </div>
     
     <div class="weather">
-      <img src="/My wether app/Img/Mist.png" class="weather-icon">
+      <div class="weather-icons">
+        <box-icon></box-icon>
+        <box-icon></box-icon>
+        <box-icon></box-icon>
+        <box-icon></box-icon>
+        <box-icon></box-icon>
+      </div>
       <h1 class="temp">22°C</h1>
       <h2 class="city"> New York</h2>
 
     <div class="details">
           <div class="colm">
-            <img src="/My wether app/Img/Drop.png" width="20%">
+            <img src="/WeatherApp/Img/Drop.png" width="20%">
             <div>
               <p class = "humidity">50%</p>
               <p>Humidity</p>
             </div>
             <div class="colm">
-              <img src="/My wether app/Img/Wind.png" class="right-aligned-img">
+              <img src="/WeatherApp/Img/Wind.png" class="right-aligned-img">
               <div>
                 <p class ="wind">15 km/h</p>
                 <p>Wind Speed</p>
@@ -46,7 +53,8 @@
     </div>
     </div>
 
-  <script src="/WeatherApp/API.js"></script>
+    <script src="/WeatherApp/API.js"></script>
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </body>
 

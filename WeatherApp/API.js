@@ -12,23 +12,23 @@ async function checkWeather(city) {
       document.querySelector(".error").style.display = "block";
       document.querySelector(".weather").style.display = "none";
     }else {
-      const data = await response.json();
+      var data = await response.json();
     }
 
-    document. querySelector(".city").innerHTML = data.name;
-    document. querySelector(".temp").innerHTML = Math.floor(data.main.temp) + " " +  "°C";
-    document. querySelector(".humidity").innerHTML = data.main.humidity + " " + "%";
-    document. querySelector(".wind").innerHTML = data.wind.speed + " " + "km/h";
+    document.querySelector(".city").innerHTML = data.name;
+    document.querySelector(".temp").innerHTML = Math.floor(data.main.temp) + " " +  "°C";
+    document.querySelector(".humidity").innerHTML = data.main.humidity + " " + "%";
+    document.querySelector(".wind").innerHTML = data.wind.speed + " " + "km/h";
     
     if(data.weather[0].main == "Clouds")
     {
-      weather_icon.src = "/My wether app/Img/Clouds.png"
+      weather_icon.name = "cloud"
     }
     else if(data.weather[0].main == "Mist"){
-      weather_icon.src = "/My wether app/Img/Mist.png"
+      weather_icon.name = "cloud-drizzle"
     }
     else if(data.weather[0].main == "Rain"){
-      weather_icon.src = "/My wether app/Img/Rain.png"
+      weather_icon.name = "cloud-rain"
     }
     else if(data.weather[0].main == "Snow"){
       weather_icon.src = "/My wether app/Img/Snow.png"
