@@ -4,7 +4,6 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-
 .card{
   width: 90%;
   max-width: 470px;
@@ -15,6 +14,7 @@
   padding: 40px 35px;
   text-align: center;
 }
+
 
 .search{
   width: 100%;
@@ -29,7 +29,7 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('/WeatherApp/Img/Background.png');
+  background-image: url('/My\ wether\ app/img/Backgraund.png');
   background-size: cover;
   background-position: center;
   z-index: -1; /* Встановлюємо менший z-індекс, щоб фон був позаду інших елементів */
@@ -59,13 +59,14 @@
 }
 
 .search button img{
-  width: 30px;
+  width: 35px;
 }
 
 .weather-icon {
   Width: 130px;
   margin-top: 30px;
 }
+
 .weather h1 {
   font-size: 40px;
   font-weight: 500;
